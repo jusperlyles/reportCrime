@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960728466813",
+    "project_id": "report-crime-8b06b",
+    "storage_bucket": "report-crime-8b06b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960728466813:android:b5540590923832365f7814",
+        "android_client_info": {
+          "package_name": "com.authority.report_crime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD1RkYkq74oXLn_PL1U0ofkgR1g8716pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

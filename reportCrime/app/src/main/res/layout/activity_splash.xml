@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.ChildAbuse01.FullscreenContainer"
+    tools:context="com.example.reportcrime.splash">
+
+    <!-- Logo Image with Animation -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="411dp"
+        android:layout_height="742dp"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:animation="@anim/logo_fade_in" />
+
+    <!-- Welcome Text with Animation -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/welcome_protect_child_rights"
+        android:textColor="#FF9940"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:animation="@anim/text_slide_in" />
+
+    <!-- FrameLayout for system insets -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!-- Controls container -->
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.ChildAbuse01.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- Additional Buttons -->
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:backgroundTint="#FF5722"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Loading box animation (ProgressBar) -->
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+    <!-- Additional ImageView with weight -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo" />
+
+</LinearLayout>

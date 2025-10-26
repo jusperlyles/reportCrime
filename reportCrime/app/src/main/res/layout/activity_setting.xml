@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.ChildAbuse01.FullscreenContainer"
+    tools:context="com.example.reportcrime.settings">
+
+    <!-- Scrollable content with improved padding and background for better contrast -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:background="@color/white">
+
+            <!-- App Title or Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorAccent" />
+
+            <!-- Display Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Settings"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent" />
+
+            <!-- High Contrast Mode Switch -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="High Contrast Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/contrast_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="14" />
+
+            </LinearLayout>
+
+            <!-- Dark/Light Mode Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@color/lightgray"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/dark_mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <!-- Font Size Adjustment (SeekBar for balance) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Font Size"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <SeekBar
+                    android:id="@+id/font_size_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="2"
+                    android:progress="1" />
+
+                <TextView
+                    android:id="@+id/font_size_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Notification Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification Settings"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent" />
+
+            <!-- Notification Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@color/lightgray"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Notifications"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <!-- Notification Settings Button -->
+            <Button
+                android:id="@+id/notification_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advanced Notification Settings"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <!-- Account Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login to Account"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <!-- Privacy Settings Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@color/lightgray"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Share Location Data"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/privacy_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <!-- Language Selection Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language &amp; Region"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/lightgray"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Language"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/language_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <!-- General Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent" />
+
+            <!-- Share Button -->
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share App"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorSecondary" />
+
+            <!-- About Button -->
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorSecondary" />
+
+            <!-- Logout Button (for balance in account section) -->
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/colorError" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Controls for Navigation -->
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="@style/Widget.Theme.ChildAbuse01.ButtonBar.Fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/colorOnSurfaceVariant" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Changes"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorPrimary" />
+
+    </LinearLayout>
+</FrameLayout>

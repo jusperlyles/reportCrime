@@ -1,0 +1,22 @@
+<!-- res/drawable/loading_spinner.xml -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    <shape
+        android:shape="ring"
+        android:useLevel="true"
+        android:thickness="4dp"
+        android:innerRadiusRatio="3"
+        android:outerRadiusRatio="4">
+        <size
+            android:width="48dp"
+            android:height="48dp" />
+        <gradient
+            android:type="sweep"
+            android:useLevel="true"
+            android:startColor="#00000000"
+            android:endColor="#FF000000" />
+    </shape>
+</rotate>

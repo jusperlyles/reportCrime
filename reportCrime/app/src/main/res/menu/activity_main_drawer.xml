@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!-- Share -->
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/baseline_share_24"
+            android:title="Share" />
+
+        <!-- Settings -->
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="Settings" />
+
+        <!-- Contact Information -->
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/baseline_contact_phone_24"
+            android:title="Contact Information" />
+
+        <!-- Account -->
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="Account" />
+
+        <!-- Notification -->
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/baseline_notifications_24"
+            android:title="Notification" />
+
+        <!-- App Language -->
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/baseline_language_24"
+            android:title="App Language" />
+    </group>
+</menu>
+

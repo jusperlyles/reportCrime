@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>"
+    <color name="teal_700">#FF018786</color>
+    <!-- Notification-Specific Colors -->
+
+    <color name="notification_primary">#1976D2</color>  <!-- Blue for mark read button -->
+    <color name="notification_secondary">#FF5722</color>  <!-- Orange for clear all button -->
+    <color name="notification_text_primary">#000000</color>  <!-- Black for main text -->
+    <color name="notification_text_secondary">#757575</color>  <!-- Gray for timestamps -->
+    <color name="notification_button_text">#FFFFFF</color>  <!-- White text on buttons -->
+    <!-- Theme-Based Colors (assuming Material Design defaults; adjust as needed) -->
+    <color name="colorPrimary">#6200EE</color>  <!-- Purple for primary buttons -->
+    <color name="colorAccent">#FF4081
+    </color>  <!-- Pink for section headers (added for more color) -->
+    <color name="colorError">#B00020</color>  <!-- Red for logout button -->
+    <!-- Login-Specific Colors -->
+    <color name="login_background">#FFFFFF</color>  <!-- White background -->
+    <color name="login_primary">#1976D2</color>  <!-- Blue primary for buttons and inputs -->
+    <color name="login_text_primary">#000000</color>  <!-- Black text -->
+    <color name="login_text_secondary">#757575</color>  <!-- Gray for hints -->
+    <color name="login_button_text">#FFFFFF</color>  <!-- White text on buttons -->
+    <color name="login_link">#1976D2</color>  <!-- Blue for signup link -->
+    <!-- Standard Colors (for reference) -->
+    <color name="black">#FF000000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorOnPrimary">#FFFFFF</color>  <!-- White, for text/icons on primary color -->
+    <color name="colorOnSurface">#000000</color>  <!-- Black, for text on surface areas -->
+    <color name="colorOnSurfaceVariant">#757575</color>  <!-- Medium gray, for secondary text -->
+    <color name="colorSurfaceVariant">#EEEEEE
+    </color>  <!-- Light gray, for backgrounds like cards or footers -->
+    <color name="colorSecondary">#03DAC6</color>  <!-- Teal, for secondary buttons or accents -->
+    <color name="colorSurface">#FFFFFF
+    </color>  <!-- White, for main surfaces like the drawer background -->
+
+    <!-- Hardcoded Colors (from your XML, converted to resources) -->
+    <color name="colorReportCrime">#FF0000</color>  <!-- Red, for Report Crime icon -->
+    <color name="colorGetHelp">#9C27B0</color>  <!-- Purple, for Get Help icon -->
+    <color name="colorLostAndFound">#4CAF50</color>  <!-- Green, for Lost and Found icon -->
+    <color name="colorMissingPersons">#E91E63</color>  <!-- Pink, for Missing Persons icon -->
+    <color name="colorSearchStation">#4CAF50
+    </color>  <!-- Green, same as Lost and Found (you can reuse or differentiate) -->
+    <color name="colorConstitutionalLaws">#FF9800
+    </color>  <!-- Orange, for Constitutional Laws icon -->
+
+    <!-- Additional colors from your XML -->
+    <color name="white">#FFFFFF</color>  <!-- For the DrawerLayout background -->
+</resources>
